@@ -60,6 +60,10 @@ const ThirdSection = () => {
 const Container = styled.section`
 	padding: 6% 0;
 
+    @media only screen and (max-width: ${MobileScreenWidth}px) {
+        padding: 24% 0 6% 0;
+    }
+
 	.content {
 		width: var(--content-width);
 		margin: 0 auto;
