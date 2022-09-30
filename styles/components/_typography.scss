@@ -1,0 +1,79 @@
+.text {
+	&__heading {
+		&--xl {
+			font-weight: 800;
+			font-size: 96px;
+			line-height: 120px;
+			text-align: center;
+
+			@include breakpoint(tablet) {
+				font-size: 90px;
+				line-height: 110px;
+			}
+			@include breakpoint(tablet-sm) {
+				font-size: 65px;
+				line-height: 80px;
+			}
+		}
+
+		&--large {
+			font-weight: 900;
+			font-size: 46px;
+			line-height: 58px;
+			text-align: left;
+		}
+
+		&--medium {
+			font-weight: 800;
+			font-size: 35px;
+			line-height: 44px;
+		}
+
+		&--small {
+			font-weight: 700;
+			font-size: 30px;
+		}
+
+		&--xs {
+			font-weight: 700;
+			font-size: 25px;
+		}
+
+		&--xxs {
+			font-weight: 700;
+			font-size: 20px;
+		}
+
+		
+	}
+
+	&__body {
+		&--xl {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 150%;
+		}
+
+		&--large {
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 150%;
+		}
+
+		&--medium {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+		}
+
+		&--small {
+			font-size: 14px;
+			font-weight: 400;
+		}
+
+		&--xs {
+			font-size: 12px;
+			font-weight: 400;
+		}
+	}
+}

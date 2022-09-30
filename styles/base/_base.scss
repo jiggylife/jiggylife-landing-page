@@ -1,0 +1,42 @@
+@font-face {
+	font-family: Lexend;
+	src: url("../../assets/fonts/Lexend-Light.ttf");
+	font-weight: 400;
+}
+@font-face {
+	font-family: Lexend;
+	src: url("../../assets/fonts/Lexend-Regular.ttf");
+	font-weight: 500;
+}
+@font-face {
+	font-family: Lexend;
+	src: url("../../assets/fonts/Lexend-Medium.ttf");
+	font-weight: 700;
+}
+@font-face {
+	font-family: Lexend;
+	src: url("../../assets/fonts/Lexend-Bold.ttf");
+	font-weight: 800;
+}
+@font-face {
+	font-family: Lexend;
+	src: url("../../assets/fonts/Lexend-ExtraBold.ttf");
+	font-weight: 900;
+}
+
+:root {
+	--content-width: 86.1%;
+	--nav-height: 11.5rem;
+	--base-tabwidth: 76.8rem;
+	--mobile-breakpoint: 42.5rem;
+
+	@include breakpoint(tablet-sm) {
+		--content-width: 75%;
+	}
+
+	@include breakpoint(mobile-lg) {
+		--content-width: 88%;}
+	@include breakpoint(mobile-medium) {
+		--content-width: 85%;
+	}
+}
