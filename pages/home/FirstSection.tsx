@@ -6,7 +6,11 @@ import Image from "next/image";
 
 import BgImage from "assets/images/grid-bg.svg";
 import Text from "components/Text";
-import { MobileScreenWidth, TabletScreenWidth } from "constants/data";
+import {
+	MobileScreenWidth,
+	SmallDesktopScreenWidth,
+	TabletScreenWidth,
+} from "constants/data";
 import { ThemeType } from "constants/theme";
 import { StoreButton } from "components/Button";
 import PhoneImage from "assets/images/hero-phone.png";
@@ -30,7 +34,7 @@ const FirstSection = () => {
 		<Container>
 			<div className="grid-container">
 				<Image src={BgImage} />
-				
+
 				<GradientCircle className="circle-1" />
 				{width > TabletScreenWidth && (
 					<>
@@ -163,7 +167,7 @@ const Container = styled.section`
 		margin-top: 2.5rem;
 
 		@media screen and (max-width: ${TabletScreenWidth}px) {
-			width: 60%;
+			width: 80%;
 			margin-top: 2rem;
 		}
 
@@ -198,7 +202,7 @@ const Container = styled.section`
 		position: relative;
 
 		@media screen and (max-width: ${TabletScreenWidth}px) {
-			margin-top: 3rem;
+			margin-top: 6.8rem;
 		}
 
 		@media screen and (max-width: 625px) {
@@ -206,11 +210,11 @@ const Container = styled.section`
 		}
 
 		@media screen and (max-width: ${MobileScreenWidth}px) {
-			width: 17.3rem;
+			width: 16.3rem;
 		}
 
 		@media screen and (max-width: 350px) {
-			width: 16.3rem;
+			width: 15.3rem;
 		}
 
 		.image,
@@ -263,6 +267,11 @@ const Container = styled.section`
 				top: 30%;
 			}
 
+			@media screen and (max-width: 550px) {
+				height: 4rem;
+				width: 5.3rem;
+			}
+
 			@media screen and (max-width: ${MobileScreenWidth}px) {
 				width: 3.5rem;
 				height: 4.6rem;
@@ -277,27 +286,51 @@ const Container = styled.section`
 		}
 
 		.icon-man {
-			height: 17.8rem;
+			aspect-ratio: 1;
 			width: 16.1rem;
 			top: 15%;
 			right: -8.5%;
 
-			@media screen and (max-width: ${TabletScreenWidth}px) {
-				height: 10.8rem;
-				width: 9.1rem;
-				top: 20%;
-				right: -1%;
+			@media screen and (max-width: ${SmallDesktopScreenWidth}px) {
+				width: 13rem;
 			}
 
-			@media screen and (max-width: 625px) {
+			@media screen and (max-width: ${TabletScreenWidth}px) {
+				width: 6.1rem;
+				top: 25%;
+				right: 4%;
+			}
+
+			@media screen and (max-width: 695px) {
+				top: 24%;
+				right: 1%;
+			}
+
+			@media screen and (max-width: 596px) {
+				top: 21%;
+				right: -3%;
+			}
+
+			@media screen and (max-width: ${MobileScreenWidth}px) {
+				top: 20%;
+				right: -19%;
+			}
+
+			/* @media screen and (max-width: 625px) {
 				right: -5%;
 			}
 
 			@media screen and (max-width: 615px) {
 				right: -5%;
+				height: 9.8rem;
+				width: 8.1rem;
 			}
 
-			@media screen and (max-width: 490px) {
+			@media screen and (max-width: 550px) {
+				right: -6.5%;
+			}
+
+			@media screen and (max-width: 510px) {
 				right: -8%;
 			}
 
@@ -310,7 +343,7 @@ const Container = styled.section`
 			@media screen and (max-width: 350px) {
 				top: 18%;
 				right: -10%;
-			}
+			} */
 		}
 		.icon-girl {
 			height: 19.8rem;
@@ -326,13 +359,27 @@ const Container = styled.section`
 			}
 
 			@media screen and (max-width: ${TabletScreenWidth}px) {
-				height: 10.8rem;
-				width: 7.6rem;
-				top: -6%;
-				right: 7%;
+				height: 8.7rem;
+				width: 6rem;
+				top: -13%;
+				right: 13%;
 			}
 
-			@media screen and (max-width: 625px) {
+			@media screen and (max-width: 645px) {
+				top: -15%;
+				right: 11%;
+			}
+
+			@media screen and (max-width: 570px) {
+				right: 6%;
+			}
+
+			@media screen and (max-width: 500px) {
+				right: 2%;
+				top: -18%;
+			}
+
+			/* @media screen and (max-width: 625px) {
 				top: -13%;
 				right: 2.5%;
 			}
@@ -340,7 +387,7 @@ const Container = styled.section`
 			@media screen and (max-width: 490px) {
 				top: -16%;
 				right: -1.5%;
-			}
+			} */
 
 			@media screen and (max-width: ${MobileScreenWidth}px) {
 				right: -19.5%;
@@ -356,7 +403,7 @@ const Container = styled.section`
 			}
 			@media screen and (max-width: 350px) {
 				right: -8%;
-			}
+			} 
 		}
 		.icon-baby {
 			--size: 16.6rem;
@@ -366,12 +413,25 @@ const Container = styled.section`
 			top: -12%;
 
 			@media screen and (max-width: ${TabletScreenWidth}px) {
-				--size: 10rem;
-				top: 5%;
-				left: 0;
+				height: 8.3rem;
+				width: 6.7rem;
+				top: 1%;
+				left: 10%;
 			}
 
-			@media screen and (max-width: 625px) {
+			@media screen and (max-width: 635px) {
+				left: 6%;
+			}
+
+			@media screen and (max-width: 530px) {
+				left: 2%;
+			}
+
+			@media screen and (max-width: 480px) {
+				left: -2%;
+			}
+
+			/* @media screen and (max-width: 625px) {
 				top: 1%;
 				left: -6%;
 			}
@@ -379,7 +439,7 @@ const Container = styled.section`
 			@media screen and (max-width: 490px) {
 				top: 0;
 				left: -8%;
-			}
+			} */
 
 			@media screen and (max-width: ${MobileScreenWidth}px) {
 				height: 6.7rem;

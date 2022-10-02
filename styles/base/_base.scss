@@ -31,7 +31,7 @@
 	--mobile-breakpoint: 42.5rem;
 
 	@include breakpoint(tablet-sm) {
-		--content-width: 75%;
+		--content-width: 82%;
 	}
 
 	@include breakpoint(mobile-lg) {
