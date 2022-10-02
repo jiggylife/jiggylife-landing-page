@@ -43,7 +43,7 @@ function Footer() {
 							type="body"
 							text="Jiggylife is a platform designed for you to learn, earn, and be entertained."
 							className={`text__body--${
-								width > MobileScreenWidth ? "large" : "small"
+								width > TabletScreenWidth ? "large" : "small"
 							} `}
 						/>
 
@@ -68,7 +68,7 @@ function Footer() {
 									type="body"
 									text="support@jiggylife.com"
 									className={`text__body--${
-										width > MobileScreenWidth
+										width > TabletScreenWidth
 											? "xl"
 											: "medium"
 									}`}
@@ -78,7 +78,7 @@ function Footer() {
 							<a href="tel:+234811211111">
 								<Text
 									className={`text__body--${
-										width > MobileScreenWidth
+										width > TabletScreenWidth
 											? "xl"
 											: "medium"
 									}`}
@@ -89,7 +89,7 @@ function Footer() {
 
 							<Text
 								className={`text__body--${
-									width > MobileScreenWidth ? "xl" : "medium"
+									width > TabletScreenWidth ? "xl" : "medium"
 								}`}
 								type="body"
 								text="Lagos, Nigeria"
@@ -101,7 +101,7 @@ function Footer() {
 								type="heading"
 								text="Company"
 								className={`text__heading--${
-									width > MobileScreenWidth ? "xs" : "xxs"
+									width > TabletScreenWidth ? "xs" : "xxs"
 								}`}
 								color={headingPrimary}
 							/>
@@ -110,7 +110,7 @@ function Footer() {
 								<a>
 									<Text
 										className={`text__body--${
-											width > MobileScreenWidth
+											width > TabletScreenWidth
 												? "xl"
 												: "medium"
 										}`}
@@ -124,7 +124,7 @@ function Footer() {
 								<a>
 									<Text
 										className={`text__body--${
-											width > MobileScreenWidth
+											width > TabletScreenWidth
 												? "xl"
 												: "medium"
 										}`}
@@ -138,7 +138,7 @@ function Footer() {
 				</div>
 
 				<div className="content__bottom">
-					{width <= MobileScreenWidth && (
+					{width <= TabletScreenWidth && (
 						<div className="store-links">
 							<StoreButton store="appstore" footer />
 							<StoreButton store="playstore" footer />
@@ -149,7 +149,7 @@ function Footer() {
 						type="body"
 						text={`Jiggylife© ${new Date().getFullYear()} Copyright. All right reserved`}
 						className={`text__body--${
-							width > MobileScreenWidth ? "large" : "xs"
+							width > TabletScreenWidth ? "large" : "xs"
 						}`}
 					/>
 				</div>
@@ -160,7 +160,7 @@ function Footer() {
 
 const Container = styled.footer`
 	width: 100%;
-	margin-bottom: 8%;
+	margin-bottom: 5%;
 
 	.content {
 		width: var(--content-width);

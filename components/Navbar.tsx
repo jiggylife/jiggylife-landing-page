@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import DesktopLogo from "assets/images/logo-desktop.png";
 import Button from "./Button";
-import { MobileScreenWidth } from "constants/data";
+import { MobileScreenWidth, TabletScreenWidth } from "constants/data";
 import useWindowSize from "utils/hooks/useWindowSize";
 
 const Navbar = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
 					</Link>
 				</div>
 
-				{width > MobileScreenWidth && (
+				{width > TabletScreenWidth && (
 					<Button link href="#" label="Get the app" />
 				)}
 			</div>
@@ -46,7 +46,7 @@ const Nav = styled.nav`
 	align-items: flex-end;
 	padding-bottom: 1.5rem;
 
-	@media screen and (max-width: ${MobileScreenWidth}px) {
+	@media screen and (max-width: ${TabletScreenWidth}px) {
 		background-color: ${({ theme }) => theme.colors.mainBackground};
 	}
 

@@ -5,7 +5,7 @@ import { SupportIcon, CheckIcon, AuthenticIcon } from "components/Icons";
 import Text from "components/Text";
 import { ThemeType } from "constants/theme";
 import useWindowSize from "utils/hooks/useWindowSize";
-import { MobileScreenWidth } from "constants/data";
+import { MobileScreenWidth, TabletScreenWidth } from "constants/data";
 
 const content = [
 	{
@@ -38,14 +38,14 @@ const ListItem = ({ Icon, heading, body }: typeof content[0]) => {
 			<Text
 				type="heading"
 				className={`text__heading--${
-					width > MobileScreenWidth ? "small" : "xxs"
+					width > TabletScreenWidth ? "small" : "xxs"
 				}`}
 				text={heading}
 				color={headingPrimary}
 				style={{ fontWeight: 800 }}
 			/>
 			<Text type="body" text={body} className={`text__body--${
-					width > MobileScreenWidth ? "xl" : "small"
+					width > TabletScreenWidth ? "xl" : "small"
 				}`} />
 		</Item>
 	);
@@ -62,15 +62,16 @@ const Item = styled.div`
 	svg {
 		margin-bottom: 3.5rem;
 
-		@media screen and (max-width: ${MobileScreenWidth}px) {
-			margin-bottom: 2.9rem;
+		@media screen and (max-width: ${TabletScreenWidth}px) {
+			margin-bottom: 2.5rem;
 		}
 	}
 
 	h1 {
 		margin-bottom: 2rem;
 
-		@media screen and (max-width: ${MobileScreenWidth}px) {
+		@media screen and (max-width: ${TabletScreenWidth}px) {
+			margin-bottom: 1.5rem;
 		}
 	}
 `;
@@ -105,9 +106,15 @@ const Container = styled.section`
 		gap: 7rem;
 		justify-content: center;
 
+		@media screen and (max-width: ${TabletScreenWidth}px) {
+			padding: 0;
+			gap: 4rem;
+			padding-bottom: 3rem;
+		}
+
 		@media screen and (max-width: ${MobileScreenWidth}px) {
 			padding: 0;
-      gap: 3.5rem;
+      		gap: 3.5rem;
 		}
 	}
 `;

@@ -17,6 +17,7 @@ import ManIcon from "assets/images/hero-image-man.png";
 import GirlIcon from "assets/images/hero-image-girl.png";
 import BabyIcon from "assets/images/hero-image-baby.png";
 import useWindowSize from "utils/hooks/useWindowSize";
+import GradientCircle from "components/GradientCircle";
 
 const FirstSection = () => {
 	const {
@@ -29,13 +30,21 @@ const FirstSection = () => {
 		<Container>
 			<div className="grid-container">
 				<Image src={BgImage} />
+				
+				<GradientCircle className="circle-1" />
+				{width > TabletScreenWidth && (
+					<>
+						<GradientCircle className="circle-2" />
+						<GradientCircle className="circle-3" />
+					</>
+				)}
 			</div>
 
 			<Text
 				text="Never get bored with jiggylife"
 				type="heading"
 				className={`text__heading--${
-					width > MobileScreenWidth ? "xl" : "medium"
+					width > TabletScreenWidth ? "xl" : "medium"
 				}`}
 				color={headingPrimary}
 			/>
@@ -44,7 +53,7 @@ const FirstSection = () => {
 				text="Jiggylife is a platform designed for you to learn, earn, and be entertained, we want you to stay Jiggy and stay Happy."
 				type="body"
 				className={`text__body--${
-					width > MobileScreenWidth ? "medium" : "xs"
+					width > TabletScreenWidth ? "medium" : "xs"
 				}`}
 				color={textSecondary}
 				style={{ lineHeight: "18px" }}
@@ -104,8 +113,27 @@ const Container = styled.section`
 		pointer-events: none;
 		z-index: -1;
 		opacity: 0.8;
+		overflow-x: hidden;
+		&::-webkit-scrollbar {
+			display: none;
+		}
 
 		@media screen and (max-width: ${TabletScreenWidth}px) {
+		}
+
+		.circle {
+			&-1 {
+				top: 13%;
+				left: -25%;
+			}
+			&-2 {
+				top: -10%;
+				right: -10%;
+			}
+			&-3 {
+				top: 65%;
+				right: -10%;
+			}
 		}
 	}
 
@@ -126,7 +154,7 @@ const Container = styled.section`
 		}
 
 		@media screen and (max-width: 373px) {
-			width: calc(var(--content-width) );
+			width: calc(var(--content-width));
 		}
 	}
 
@@ -135,7 +163,7 @@ const Container = styled.section`
 		margin-top: 2.5rem;
 
 		@media screen and (max-width: ${TabletScreenWidth}px) {
-			width: 50%;
+			width: 60%;
 			margin-top: 2rem;
 		}
 
@@ -195,8 +223,8 @@ const Container = styled.section`
 			min-width: 17.4rem;
 
 			@media screen and (max-width: 350px) {
-			min-width: 16.4rem;
-		}
+				min-width: 16.4rem;
+			}
 		}
 
 		.bg {

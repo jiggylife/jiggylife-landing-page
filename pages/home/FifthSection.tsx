@@ -26,7 +26,7 @@ const FifthSection = () => {
 						type="heading"
 						text="Join our Social Network as an Influencer 👩‍💼"
 						className={`text__heading--${
-							width > MobileScreenWidth ? "large" : "xs"
+							width > TabletScreenWidth ? "large" : "xs"
 						}`}
 						color={headingPrimary}
 					/>
@@ -35,7 +35,7 @@ const FifthSection = () => {
 						type="body"
 						text="Jiggylife is made for influencers, if you are an influencer and you want to make money, join Jiggylife. We have a ranking system that rewards the top 3 influencers every week. You don’t need followers, you only need Jiggylife."
 						className={`text__body--${
-							width > MobileScreenWidth ? "xl" : "small"
+							width > TabletScreenWidth ? "xl" : "small"
 						}`}
 					/>
 				</div>
@@ -100,7 +100,7 @@ const Container = styled.section`
 					margin-bottom: 2rem;
 				}
 
-				@media only screen and (max-width: ${MobileScreenWidth}px) {
+				@media only screen and (max-width: ${TabletScreenWidth}px) {
 					font-size: 25px;
 					line-height: 31px;
 					margin-bottom: 1.5rem;

@@ -30,6 +30,7 @@ export type ThemeType = {
 		textPrimary: string;
 		textSecondary: string;
 		footerBackground: string;
+		gradientBackground: string;
 	};
 	navHeight: string;
 };
@@ -43,6 +44,7 @@ export const theme: ThemeType = {
 		textPrimary: pallete.grey[100],
 		textSecondary: pallete.grey[400],
 		footerBackground: pallete.orange[100],
+		gradientBackground: pallete.orange[400],
 	},
 	navHeight: "11.5rem",
 };

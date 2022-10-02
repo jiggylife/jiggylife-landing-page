@@ -30,7 +30,7 @@ const FourthSection = () => {
 						type="heading"
 						text="Play Our Games and Learn More Every day💰"
 						className={`text__heading--${
-							width > MobileScreenWidth ? "large" : "xs"
+							width > TabletScreenWidth ? "large" : "xs"
 						}`}
 						color={headingPrimary}
 					/>
@@ -39,7 +39,7 @@ const FourthSection = () => {
 						type="body"
 						text="We send trivia questions as an opportunity to learn and earn. So For every correct answer, we will give a cash prize."
 						className={`text__body--${
-							width > MobileScreenWidth ? "xl" : "small"
+							width > TabletScreenWidth ? "xl" : "small"
 						}`}
 					/>
 				</div>
@@ -100,7 +100,7 @@ const Container = styled.section`
 					margin-bottom: 2rem;
 				}
 
-				@media only screen and (max-width: ${MobileScreenWidth}px) {
+				@media only screen and (max-width: ${TabletScreenWidth}px) {
 					font-size: 25px;
 					line-height: 31px;
 					margin-bottom: 1.5rem;

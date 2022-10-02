@@ -26,7 +26,7 @@ const ThirdSection = () => {
 						type="heading"
 						text="About Jiggy"
 						className={`text__heading--${
-							width > MobileScreenWidth ? "medium" : "xxs"
+							width > TabletScreenWidth ? "medium" : "xxs"
 						}`}
 						color={primary}
 						style={{ fontWeight: 700 }}
@@ -36,7 +36,7 @@ const ThirdSection = () => {
 						type="heading"
 						text="You Probably Want to Know About Us Right?"
 						className={`text__heading--${
-							width > MobileScreenWidth ? "large" : "xs"
+							width > TabletScreenWidth ? "large" : "xs"
 						}`}
 						color={headingPrimary}
 					/>
@@ -45,7 +45,7 @@ const ThirdSection = () => {
 						type="body"
 						text="JIGGY is a registered social platform established in 2022 that allow you earn money by answering trivia questions, view contents and videos from other users, vote for your favorite BBNaija Housemates and access leaderboard of influencers on the platform."
 						className={`text__body--${
-							width > MobileScreenWidth ? "xl" : "small"
+							width > TabletScreenWidth ? "xl" : "small"
 						}`}
 					/>
 				</div>
@@ -60,9 +60,9 @@ const ThirdSection = () => {
 const Container = styled.section`
 	padding: 6% 0;
 
-    @media only screen and (max-width: ${MobileScreenWidth}px) {
-        padding: 24% 0 6% 0;
-    }
+	@media only screen and (max-width: ${MobileScreenWidth}px) {
+		padding: 24% 0 6% 0;
+	}
 
 	.content {
 		width: var(--content-width);
@@ -107,7 +107,7 @@ const Container = styled.section`
 					margin-bottom: 2rem;
 				}
 
-				@media only screen and (max-width: ${MobileScreenWidth}px) {
+				@media only screen and (max-width: ${TabletScreenWidth}px) {
 					font-size: 25px;
 					line-height: 31px;
 					margin-bottom: 1.5rem;
@@ -115,7 +115,7 @@ const Container = styled.section`
 				}
 			}
 			p {
-				@media only screen and (max-width: ${SmallDesktopScreenWidth}px) and (min-width: ${MobileScreenWidth}px) {
+				@media only screen and (max-width: ${SmallDesktopScreenWidth}px) and (min-width: ${769}px) {
 					font-size: 16px;
 				}
 			}
