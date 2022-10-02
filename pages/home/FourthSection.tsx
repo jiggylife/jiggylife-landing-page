@@ -6,11 +6,7 @@ import PhoneImage from "assets/images/last-section-phone.png";
 import Text from "components/Text";
 import useWindowSize from "utils/hooks/useWindowSize";
 import { ThemeType } from "constants/theme";
-import {
-	MobileScreenWidth,
-	SmallDesktopScreenWidth,
-	TabletScreenWidth,
-} from "constants/data";
+import { SmallDesktopScreenWidth, TabletScreenWidth } from "constants/data";
 
 const FourthSection = () => {
 	const {

@@ -17,10 +17,6 @@ const pallete = {
 	},
 };
 
-// export type ThemeType = {
-// 	[key: string]: string | { [key: string]: string };
-// };
-
 export type ThemeType = {
 	colors: {
 		primary: string;

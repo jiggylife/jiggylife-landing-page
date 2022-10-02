@@ -23,7 +23,6 @@ const Wrapper = styled.div`
 	width: 100%;
 	min-height: 100%;
 	max-width: 1440px;
-	/* background-color: red; */
 	margin: 0 auto;
 	position: relative;
 `;

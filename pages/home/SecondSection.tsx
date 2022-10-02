@@ -102,7 +102,6 @@ const Container = styled.section`
 
 	.content {
 		width: var(--content-width);
-		/* background-color: red; */
 		margin: 0 auto;
 		padding: 10.5rem 0;
 		display: flex;

@@ -7,7 +7,6 @@ import Text from "components/Text";
 import useWindowSize from "utils/hooks/useWindowSize";
 import { ThemeType } from "constants/theme";
 import {
-	MobileScreenWidth,
 	SmallDesktopScreenWidth,
 	TabletScreenWidth,
 } from "constants/data";

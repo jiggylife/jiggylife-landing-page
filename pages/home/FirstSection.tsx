@@ -16,7 +16,6 @@ import { StoreButton } from "components/Button";
 import PhoneImage from "assets/images/hero-phone.png";
 import PhoneImageBg from "assets/images/hero-phone-bg.svg";
 import HeroLightning from "assets/images/hero-lightning.png";
-import HeroLightningMobile from "assets/images/hero-lightning-mobile.png";
 import ManIcon from "assets/images/hero-image-man.png";
 import GirlIcon from "assets/images/hero-image-girl.png";
 import BabyIcon from "assets/images/hero-image-baby.png";
@@ -76,11 +75,7 @@ const FirstSection = () => {
 					<Image src={PhoneImageBg} />
 				</div>
 				<div className="lightning-box">
-					{width <= TabletScreenWidth ? (
-						<Image layout="responsive" src={HeroLightningMobile} />
-					) : (
-						<Image layout="responsive" src={HeroLightning} />
-					)}
+					<Image layout="responsive" src={HeroLightning} />
 				</div>
 
 				<div className="icon-man">
@@ -99,10 +94,9 @@ const FirstSection = () => {
 
 const Container = styled.section`
 	padding-top: calc(var(--nav-height) + 6%);
-	/* height: 100vh; */
 	width: 100%;
 	position: relative;
-	overflow-x: hidden;
+	overflow: hidden;
 
 	@media screen and (max-width: 1000px) {
 		padding-top: calc(var(--nav-height) + 5%);
@@ -323,35 +317,6 @@ const Container = styled.section`
 				top: 20%;
 				right: -19%;
 			}
-
-			/* @media screen and (max-width: 625px) {
-				right: -5%;
-			}
-
-			@media screen and (max-width: 615px) {
-				right: -5%;
-				height: 9.8rem;
-				width: 8.1rem;
-			}
-
-			@media screen and (max-width: 550px) {
-				right: -6.5%;
-			}
-
-			@media screen and (max-width: 510px) {
-				right: -8%;
-			}
-
-			@media screen and (max-width: ${MobileScreenWidth}px) {
-				--size: 6rem;
-				height: var(--size);
-				width: var(--size);
-				right: -15%;
-			}
-			@media screen and (max-width: 350px) {
-				top: 18%;
-				right: -10%;
-			} */
 		}
 		.icon-girl {
 			height: 19.8rem;
@@ -386,16 +351,6 @@ const Container = styled.section`
 				right: 2%;
 				top: -18%;
 			}
-
-			/* @media screen and (max-width: 625px) {
-				top: -13%;
-				right: 2.5%;
-			}
-
-			@media screen and (max-width: 490px) {
-				top: -16%;
-				right: -1.5%;
-			} */
 
 			@media screen and (max-width: ${MobileScreenWidth}px) {
 				right: -19.5%;
@@ -438,16 +393,6 @@ const Container = styled.section`
 			@media screen and (max-width: 480px) {
 				left: -2%;
 			}
-
-			/* @media screen and (max-width: 625px) {
-				top: 1%;
-				left: -6%;
-			}
-
-			@media screen and (max-width: 490px) {
-				top: 0;
-				left: -8%;
-			} */
 
 			@media screen and (max-width: ${MobileScreenWidth}px) {
 				height: 6.7rem;

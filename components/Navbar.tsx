@@ -9,7 +9,6 @@ import { MobileScreenWidth, TabletScreenWidth } from "constants/data";
 import useWindowSize from "utils/hooks/useWindowSize";
 
 const Navbar = () => {
-	const { width } = useWindowSize();
 
 	return (
 		<Nav>
@@ -43,10 +42,6 @@ const Nav = styled.nav`
 	justify-content: center;
 	align-items: flex-end;
 	padding-bottom: 1.5rem;
-
-	@media screen and (max-width: ${TabletScreenWidth}px) {
-		/* background-color: ${({ theme }) => theme.colors.mainBackground}; */
-	}
 
 	.nav-content {
 		left: 0;
