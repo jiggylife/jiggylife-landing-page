@@ -34,15 +34,15 @@ const FirstSection = () => {
 		<Container>
 			<div className="grid-container">
 				<Image src={BgImage} />
-
-				<GradientCircle className="circle-1" />
-				{width > TabletScreenWidth && (
-					<>
-						<GradientCircle className="circle-2" />
-						<GradientCircle className="circle-3" />
-					</>
-				)}
 			</div>
+
+			{width > TabletScreenWidth && (
+				<>
+					<GradientCircle className="circle-1" />
+					<GradientCircle className="circle-2" />
+				</>
+			)}
+			<GradientCircle className="circle-3" />
 
 			<Text
 				text="Never get bored with jiggylife"
@@ -102,6 +102,7 @@ const Container = styled.section`
 	/* height: 100vh; */
 	width: 100%;
 	position: relative;
+	overflow-x: hidden;
 
 	@media screen and (max-width: 1000px) {
 		padding-top: calc(var(--nav-height) + 5%);
@@ -117,26 +118,32 @@ const Container = styled.section`
 		pointer-events: none;
 		z-index: -1;
 		opacity: 0.8;
-		overflow-x: hidden;
+
 		&::-webkit-scrollbar {
 			display: none;
 		}
 
 		@media screen and (max-width: ${TabletScreenWidth}px) {
 		}
+	}
 
-		.circle {
-			&-1 {
-				top: 13%;
-				left: -25%;
-			}
-			&-2 {
-				top: -10%;
-				right: -10%;
-			}
-			&-3 {
-				top: 65%;
-				right: -10%;
+	.circle {
+		&-1 {
+			top: 13%;
+			left: -25%;
+		}
+		&-2 {
+			top: -10%;
+			right: -10%;
+		}
+		&-3 {
+			top: 65%;
+			right: -10%;
+
+			@media screen and (max-width: ${TabletScreenWidth}px) {
+				top: 30%;
+				left: 50%;
+				transform: translate(-50%, -50%);
 			}
 		}
 	}
@@ -290,6 +297,7 @@ const Container = styled.section`
 			width: 16.1rem;
 			top: 15%;
 			right: -8.5%;
+			z-index: 2;
 
 			@media screen and (max-width: ${SmallDesktopScreenWidth}px) {
 				width: 13rem;
@@ -403,7 +411,7 @@ const Container = styled.section`
 			}
 			@media screen and (max-width: 350px) {
 				right: -8%;
-			} 
+			}
 		}
 		.icon-baby {
 			--size: 16.6rem;

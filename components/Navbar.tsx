@@ -27,9 +27,7 @@ const Navbar = () => {
 					</Link>
 				</div>
 
-				{width > TabletScreenWidth && (
-					<Button link href="#" label="Get the app" />
-				)}
+				<Button link href="#" label="Get the app" />
 			</div>
 		</Nav>
 	);
@@ -47,7 +45,7 @@ const Nav = styled.nav`
 	padding-bottom: 1.5rem;
 
 	@media screen and (max-width: ${TabletScreenWidth}px) {
-		background-color: ${({ theme }) => theme.colors.mainBackground};
+		/* background-color: ${({ theme }) => theme.colors.mainBackground}; */
 	}
 
 	.nav-content {
@@ -61,9 +59,9 @@ const Nav = styled.nav`
 			height: 6.8rem;
 			width: 12.4rem;
 
-			@media screen and (max-width: ${MobileScreenWidth}px) {
-				height: 4.9rem;
-				width: 9rem;
+			@media screen and (max-width: ${TabletScreenWidth}px) {
+				height: 4rem;
+				width: 8rem;
 			}
 		}
 	}

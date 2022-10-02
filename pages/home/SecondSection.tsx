@@ -44,9 +44,13 @@ const ListItem = ({ Icon, heading, body }: typeof content[0]) => {
 				color={headingPrimary}
 				style={{ fontWeight: 800 }}
 			/>
-			<Text type="body" text={body} className={`text__body--${
+			<Text
+				type="body"
+				text={body}
+				className={`text__body--${
 					width > TabletScreenWidth ? "xl" : "small"
-				}`} />
+				}`}
+			/>
 		</Item>
 	);
 };
@@ -102,9 +106,14 @@ const Container = styled.section`
 		margin: 0 auto;
 		padding: 10.5rem 0;
 		display: flex;
-		flex-wrap: wrap;
 		gap: 7rem;
 		justify-content: center;
+
+		@media screen and (max-width: 1380px) {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
 
 		@media screen and (max-width: ${TabletScreenWidth}px) {
 			padding: 0;
@@ -114,7 +123,7 @@ const Container = styled.section`
 
 		@media screen and (max-width: ${MobileScreenWidth}px) {
 			padding: 0;
-      		gap: 3.5rem;
+			gap: 3.5rem;
 		}
 	}
 `;

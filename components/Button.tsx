@@ -1,4 +1,4 @@
-import { MobileScreenWidth } from "constants/data";
+import { MobileScreenWidth, TabletScreenWidth } from "constants/data";
 import React from "react";
 import styled from "styled-components";
 import useWindowSize from "utils/hooks/useWindowSize";
@@ -73,6 +73,11 @@ const StyledButton = styled.button`
 	font-size: 16px;
 	line-height: 150%;
 	padding: 2rem 4rem;
+
+	@media screen and (max-width: ${TabletScreenWidth}px) {
+		padding: 1.5rem 3rem;
+		font-size: 14px;
+	}
 `;
 
 export default Button;
