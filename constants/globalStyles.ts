@@ -17,7 +17,7 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         font-family: Lexend;
         min-height: 100vh;
-        background-color: #FFFFFE;
+        background-color: #FFFFFF;
     }
 
     a,

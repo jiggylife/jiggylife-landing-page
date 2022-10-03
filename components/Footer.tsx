@@ -147,7 +147,7 @@ function Footer() {
 
 					<Text
 						type="body"
-						text={`Jiggylife© ${new Date().getFullYear()} Copyright. All right reserved`}
+						text={`Jiggylife ©${new Date().getFullYear()} Copyright. All right reserved`}
 						className={`text__body--${
 							width > TabletScreenWidth ? "large" : "xs"
 						}`}
