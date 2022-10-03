@@ -69,13 +69,13 @@ const StyledButton = styled.button`
 	border: ${({ theme }) => theme.colors.primary} 1px solid;
 	border-radius: 1000px;
 	color: ${({ theme }) => theme.colors.primary} !important;
-	font-weight: 500;
-	font-size: 16px;
+	font-weight: 400;
+	font-size: 15px;
 	line-height: 150%;
-	padding: 2rem 4rem;
+	padding: 1.5rem 3rem;
 
 	@media screen and (max-width: ${TabletScreenWidth}px) {
-		padding: 1.5rem 3rem;
+		padding: 1rem 2rem;
 		font-size: 14px;
 	}
 `;
