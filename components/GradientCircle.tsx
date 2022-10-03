@@ -15,7 +15,7 @@ const Circle = styled.div`
 	height: var(--size);
 	width: var(--size);
 	background-color: ${({ theme }) => theme.colors.gradientBackground};
-	z-index: 10;
+	z-index: -2;
 	border-radius: 50%;
 	opacity: 0.1;
 	filter: blur(1000px);
