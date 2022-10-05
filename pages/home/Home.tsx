@@ -7,6 +7,7 @@ import ThirdSection from "./ThirdSection";
 const Home = () => {
 	return (
 		<>
+        <title>Jiggylife</title>
 			<FirstSection />
 			<SecondSection />
 			<ThirdSection />
