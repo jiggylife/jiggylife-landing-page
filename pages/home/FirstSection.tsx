@@ -44,7 +44,7 @@ const FirstSection = () => {
 			<GradientCircle className="circle-3" />
 
 			<Text
-				text="Never get bored with jiggylife"
+				text="Influencer lifestyle unscripted"
 				type="heading"
 				className={`text__heading--${
 					width > TabletScreenWidth ? "xl" : "medium"
@@ -53,7 +53,7 @@ const FirstSection = () => {
 			/>
 
 			<Text
-				text="Jiggylife is a platform designed for you to learn, earn, and be entertained, we want you to stay Jiggy and stay Happy."
+				text="Jiggylife is an ecosystem made for influencers. It offers the best possible opportunity for influencers to make money every week"
 				type="body"
 				className={`text__body--${
 					width > TabletScreenWidth ? "medium" : "xs"

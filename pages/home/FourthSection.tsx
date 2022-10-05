@@ -24,7 +24,7 @@ const FourthSection = () => {
 				<div className="content__right">
 					<Text
 						type="heading"
-						text="Play Our Games and Learn More Every day💰"
+						text="Know whats happening to your favourite influencer 👀"
 						className={`text__heading--${
 							width > TabletScreenWidth ? "large" : "xs"
 						}`}
@@ -33,7 +33,7 @@ const FourthSection = () => {
 
 					<Text
 						type="body"
-						text="We send trivia questions as an opportunity to learn and earn. So For every correct answer, we will give a cash prize."
+						text="Get a glimpse into the life of some of your favourite influencers, discover more great and shitty things about them."
 						className={`text__body--${
 							width > TabletScreenWidth ? "xl" : "small"
 						}`}

@@ -34,7 +34,7 @@ const ThirdSection = () => {
 
 					<Text
 						type="heading"
-						text="You Probably Want to Know About Us Right?"
+						text="What is a Jiggy?"
 						className={`text__heading--${
 							width > TabletScreenWidth ? "large" : "xs"
 						}`}
@@ -43,7 +43,7 @@ const ThirdSection = () => {
 
 					<Text
 						type="body"
-						text="JIGGY is a registered social platform established in 2022 that allow you earn money by answering trivia questions, view contents and videos from other users, vote for your favorite BBNaija Housemates and access leaderboard of influencers on the platform."
+						text="Jiggylife is an entertaining channel made possible by influencers. We're here to entertain and spread vawulence. We also brings you the best in entertainment, lifestyle, life tips, up-to-date informations and more from your favourite influencers."
 						className={`text__body--${
 							width > TabletScreenWidth ? "xl" : "small"
 						}`}

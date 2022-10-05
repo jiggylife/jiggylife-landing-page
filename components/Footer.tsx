@@ -41,16 +41,28 @@ function Footer() {
 
 						<Text
 							type="body"
-							text="Jiggylife is a platform designed for you to learn, earn, and be entertained."
+							text="Influencer lifestyle unscripted — The most entertaining platform of all time 👀"
 							className={`text__body--${
 								width > TabletScreenWidth ? "large" : "small"
 							} `}
 						/>
 
 						<div className="links-box">
-							<FacebookIcon />
-							<TwitterIcon />
-							<InstagramIcon />
+							<Link href="https://facebook.com/jiggylife">
+								<a target="_blank">
+									<FacebookIcon />
+								</a>
+							</Link>
+							<Link href="https://twitter.com/jiggylifeHQ">
+								<a target="_blank">
+									<TwitterIcon />
+								</a>
+							</Link>
+							<Link href="https://instagram.com/jiggylifeHQ">
+								<a target="_blank">
+									<InstagramIcon />
+								</a>
+							</Link>
 						</div>
 					</div>
 
@@ -63,10 +75,10 @@ function Footer() {
 								color={headingPrimary}
 							/>
 
-							<a href="mailto:support@jiggylife.com">
+							<a href="mailto:business@jiggylife.com">
 								<Text
 									type="body"
-									text="support@jiggylife.com"
+									text="business@jiggylife.com"
 									className={`text__body--${
 										width > TabletScreenWidth
 											? "xl"
@@ -75,7 +87,7 @@ function Footer() {
 								/>
 							</a>
 
-							<a href="tel:+234811211111">
+							<a href="tel:+2349150951878">
 								<Text
 									className={`text__body--${
 										width > TabletScreenWidth
@@ -83,7 +95,7 @@ function Footer() {
 											: "medium"
 									}`}
 									type="body"
-									text="+234811211111"
+									text="+234 915 095 1878"
 								/>
 							</a>
 
@@ -92,7 +104,7 @@ function Footer() {
 									width > TabletScreenWidth ? "xl" : "medium"
 								}`}
 								type="body"
-								text="Lagos, Nigeria"
+								text="Jiggyland, Nigeria"
 							/>
 						</div>
 
@@ -147,7 +159,7 @@ function Footer() {
 
 					<Text
 						type="body"
-						text={`Jiggylife ©${new Date().getFullYear()} Copyright. All right reserved`}
+						text={`Jiggylife Inc. ©${new Date().getFullYear()} Copyright ｜ All right reserved`}
 						className={`text__body--${
 							width > TabletScreenWidth ? "large" : "xs"
 						}`}

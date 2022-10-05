@@ -23,7 +23,7 @@ const FifthSection = () => {
 				<div className="content__left">
 					<Text
 						type="heading"
-						text="Join our Social Network as an Influencer 👩‍💼"
+						text="Join the conversation cooked by your favourite influencer 🥷"
 						className={`text__heading--${
 							width > TabletScreenWidth ? "large" : "xs"
 						}`}
@@ -32,7 +32,7 @@ const FifthSection = () => {
 
 					<Text
 						type="body"
-						text="Jiggylife is made for influencers, if you are an influencer and you want to make money, join Jiggylife. We have a ranking system that rewards the top 3 influencers every week. You don’t need followers, you only need Jiggylife."
+						text="Jiggylife gives you the opportunity to connect with your favourite influencer, join the conversation around them and help them drag other influencers."
 						className={`text__body--${
 							width > TabletScreenWidth ? "xl" : "small"
 						}`}

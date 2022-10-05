@@ -10,18 +10,18 @@ import { MobileScreenWidth, TabletScreenWidth } from "constants/data";
 const content = [
 	{
 		Icon: SupportIcon,
-		heading: "24/7 Support",
-		body: "Readily available to help and provide answers to questions as soon as they come up.",
+		heading: "24/7 Entertainment",
+		body: "Jiggylife is an entertaining channel made possible by influencers",
 	},
 	{
 		Icon: CheckIcon,
-		heading: "Safe & Secure",
-		body: "Using out platform is safe & Secure, your data are safe with us, all data is classified as confidential",
+		heading: "Vawulence ✔",
+		body: "Catch the non-stop vawulence and gbas-gbos from your favourite influencers",
 	},
 	{
 		Icon: AuthenticIcon,
-		heading: "100% Authentic",
-		body: "Yes, we are 100% authentic, you have nothing to worry about",
+		heading: "Vawulence ++",
+		body: "Stay up-to-date with happenings as regards your favourite influencer",
 	},
 ];
 
