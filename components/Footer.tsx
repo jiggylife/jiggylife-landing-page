@@ -118,7 +118,7 @@ function Footer() {
 								color={headingPrimary}
 							/>
 
-							<Link href="#">
+							<Link href="https://jiggylife.notion.site/Privacy-Policy-4d4e5ae533fb4b03ba3956cc92fd770b">
 								<a>
 									<Text
 										className={`text__body--${
@@ -132,7 +132,7 @@ function Footer() {
 								</a>
 							</Link>
 
-							<Link href="#">
+							<Link href="https://jiggylife.notion.site/Terms-and-Conditions-a9436842a19a45f8a1ef5c03b6c51bf1">
 								<a>
 									<Text
 										className={`text__body--${
