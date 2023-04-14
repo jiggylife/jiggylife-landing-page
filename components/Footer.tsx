@@ -5,7 +5,7 @@ import styled, { useTheme } from "styled-components";
 
 import DesktopLogo from "assets/images/logo-desktop.png";
 import Text from "./Text";
-import { FacebookIcon, InstagramIcon, TwitterIcon } from "./Icons";
+import { FacebookIcon, InstagramIcon, TwitterIcon, TiktokIcon } from "./Icons";
 import { StoreButton } from "./Button";
 import {
 	MobileScreenWidth,
@@ -63,6 +63,11 @@ function Footer() {
 									<InstagramIcon />
 								</a>
 							</Link>
+							<Link href="https://www.tiktok.com/@jiggylifehq">
+								<a target="_blank">
+									<TiktokIcon />
+								</a>
+							</Link>
 						</div>
 					</div>
 
@@ -75,10 +80,10 @@ function Footer() {
 								color={headingPrimary}
 							/>
 
-							<a href="mailto:business@jiggylife.com">
+							<a href="mailto:connect@jiggylife.com">
 								<Text
 									type="body"
-									text="business@jiggylife.com"
+									text="connect@jiggylife.com"
 									className={`text__body--${
 										width > TabletScreenWidth
 											? "xl"
@@ -87,7 +92,7 @@ function Footer() {
 								/>
 							</a>
 
-							<a href="tel:+2349150951878">
+							<a href="tel:+2347044666343">
 								<Text
 									className={`text__body--${
 										width > TabletScreenWidth
@@ -95,7 +100,7 @@ function Footer() {
 											: "medium"
 									}`}
 									type="body"
-									text="+234 915 095 1878"
+									text="+234 704 466 6343"
 								/>
 							</a>
 
@@ -104,7 +109,7 @@ function Footer() {
 									width > TabletScreenWidth ? "xl" : "medium"
 								}`}
 								type="body"
-								text="Jiggyland, Nigeria"
+								text="Lagos, Nigeria"
 							/>
 						</div>
 
@@ -159,7 +164,7 @@ function Footer() {
 
 					<Text
 						type="body"
-						text={`Jiggylife Inc. ©${new Date().getFullYear()} Copyright ｜ All right reserved`}
+						text={`©${new Date().getFullYear()} Jiggyliife Limited - RC 6921509 ｜ All right reserved`}
 						className={`text__body--${
 							width > TabletScreenWidth ? "large" : "xs"
 						}`}
